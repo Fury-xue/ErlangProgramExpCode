@@ -15,6 +15,12 @@
 %%% API
 %%%===================================================================
 
+-spec area(Arg) -> Area when
+      Arg :: {circular,Radii} | {rightTriangle,SideLen1,SideLen2},
+      Area :: integer(),
+      Radii :: integer(),
+      SideLen1 :: integer(),
+      SideLen2 :: integer().
 
 area({circular,Radii}) ->
     Area = 3.1415926 * Radii * Radii,
